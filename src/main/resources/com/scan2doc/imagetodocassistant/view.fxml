@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.scan2doc.imagetodocassistant.Controller">
+   <children>
+      <Label layoutX="233.0" layoutY="41.0" text="Nombre" />
+      <TextField fx:id="txtNombre" layoutX="289.0" layoutY="36.0" prefHeight="26.0" prefWidth="287.0" />
+      <Label layoutX="250.0" layoutY="69.0" text="ID" />
+      <TextField fx:id="txtId" layoutX="289.0" layoutY="69.0" prefHeight="26.0" prefWidth="287.0" />
+      <Label layoutX="248.0" layoutY="105.0" text="Edad" />
+      <TextField fx:id="txtEdad" layoutX="289.0" layoutY="100.0" prefHeight="26.0" prefWidth="112.0" />
+      <Label layoutX="245.0" layoutY="146.0" text="Fecha" />
+      <TextField fx:id="txtFecha" layoutX="289.0" layoutY="141.0" prefHeight="26.0" prefWidth="112.0" />
+      <Button fx:id="processButton" layoutX="470.0" layoutY="219.0" mnemonicParsing="false" text="Procesar" />
+      <ScrollPane fitToWidth="true" prefHeight="685.0" prefWidth="222.0">
+         <VBox fx:id="imageContainer" spacing="10" />
+      </ScrollPane>
+      <Button fx:id="selectImagesButton" layoutX="230.0" layoutY="219.0" text="Seleccionar Imagenes" />
+      <TextArea fx:id="txtConclusion" layoutX="246.0" layoutY="328.0" prefHeight="341.0" prefWidth="328.0" />
+      <Label layoutX="247.0" layoutY="292.0" text="CONCLUSIÓN:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
